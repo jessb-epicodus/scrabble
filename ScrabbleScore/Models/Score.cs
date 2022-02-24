@@ -20,8 +20,7 @@ namespace ScrabbleScore.Models
 
     public char[] GetArray(string word)
     {
-      char[] stringArray = { 'f' };
-      return stringArray;
+      return word.ToCharArray();
     }
   }
 }
