@@ -15,7 +15,7 @@ namespace ScrabbleScore.Models
 
     public string ConvertToLowerCase(string word) 
     {
-      return "False";
+      return word.ToLower();
     }
   }
 }
