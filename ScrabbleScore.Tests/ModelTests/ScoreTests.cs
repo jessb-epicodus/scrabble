@@ -6,8 +6,8 @@ using ScrabbleScore.Models;
 // Create new instance of word via constructor  X
 // return word as string  X
 // Convert the word to lowercase  X
-// Split the string into an array  
-// Create counter variable
+// Split the string into an array  X
+// Create counter variable  
 // If/Else statement adds value to counter depending on letter
 // Return counter value
 
@@ -50,35 +50,13 @@ namespace ScrabbleScore.Tests
       Assert.AreEqual(array[2], result[2]);
       Assert.AreEqual(array[3], result[3]);
     }
+    [TestMethod]
+    public void ScrabbleScoreCounter_ReturnScrabbleWordScore_Int()
+    {
+      string word = "test";
+      Score newScore = new Score(word);
+      string result = newScore.Word;
+      Assert.AreEqual(4, newScore.ScrabbleScoreCounter("test"));
+    }
   }
 }
-
-// [TestMethod]
-// public void AllItemsAreInstanceOfType_String()
-// {
-//     string[] stringArray = new string[] { "Hello", "darkness", "my", "old", "friend" };
-
-//     CollectionAssert.AllItemsAreInstancesOfType(stringArray, typeof(string));
-// }
-
-// using System;
-// using Xunit;
-// using PrimeFactorsGen;
-
-// namespace FactorialUnitTest
-// {
-//     public class UnitTest1
-//     {
-//         [Fact]
-//         public void Test1()
-//         {
-//             //arrange
-//             int number = 42;
-//             int[] expected = { 2, 3, 7, 0, 0, 0, 0, 0, 0, 0 };
-//             //act
-//             var actual = PFGen.PrimeFactors(number);
-//             //assert
-//             Assert.Equal(actual,expected);
-//         }
-//     }
-// }

@@ -22,5 +22,9 @@ namespace ScrabbleScore.Models
     {
       return word.ToCharArray();
     }
+
+    public int ScrabbleScoreCounter(string word) {
+      return 0;
+    }
   }
 }
