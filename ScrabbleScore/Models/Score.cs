@@ -18,11 +18,10 @@ namespace ScrabbleScore.Models
       return word.ToLower();
     }
 
-    public string GetArray(string word)
+    public char[] GetArray(string word)
     {
-      return "false";
+      char[] stringArray = { 'f' };
+      return stringArray;
     }
   }
 }
-
-// letters = {"t", "e", "s", "t"}

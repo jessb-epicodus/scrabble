@@ -1,6 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-// using System.Collections.Generic;
-// using System;
+using System.Collections.Generic;
+using System;
 using ScrabbleScore.Models;
 
 // Create new instance of word via constructor  X
@@ -39,12 +39,46 @@ namespace ScrabbleScore.Tests
       Assert.AreEqual("test", newScore.ConvertToLowerCase("TEST"));
     }
     [TestMethod]
-    public void GetArray_ReturnLetters_String()
+    public void GetArray_ReturnLetters_Char()
     {
       string word = "test";
+      char[] array = { 't', 'e', 's', 't' };
       Score newScore = new Score(word);
-      string result = newScore.Word;
-      Assert.AreEqual("t","e","s","t", newScore.GetArray("test"));
+      char[] result = newScore.GetArray("test");
+      Assert.AreEqual(array[0], result[0]);
+      Assert.AreEqual(array[1], result[1]);
+      Assert.AreEqual(array[2], result[2]);
+      Assert.AreEqual(array[3], result[3]);
     }
   }
 }
+
+// [TestMethod]
+// public void AllItemsAreInstanceOfType_String()
+// {
+//     string[] stringArray = new string[] { "Hello", "darkness", "my", "old", "friend" };
+
+//     CollectionAssert.AllItemsAreInstancesOfType(stringArray, typeof(string));
+// }
+
+// using System;
+// using Xunit;
+// using PrimeFactorsGen;
+
+// namespace FactorialUnitTest
+// {
+//     public class UnitTest1
+//     {
+//         [Fact]
+//         public void Test1()
+//         {
+//             //arrange
+//             int number = 42;
+//             int[] expected = { 2, 3, 7, 0, 0, 0, 0, 0, 0, 0 };
+//             //act
+//             var actual = PFGen.PrimeFactors(number);
+//             //assert
+//             Assert.Equal(actual,expected);
+//         }
+//     }
+// }
