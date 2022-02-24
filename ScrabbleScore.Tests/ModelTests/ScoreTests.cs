@@ -4,7 +4,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using ScrabbleScore.Models;
 
 // Create new instance of word via constructor  X
-// 
+// return word as string
 // Convert the word to lowercase
 // Split the string into an array
 // Create counter variable
@@ -29,6 +29,14 @@ namespace ScrabbleScore.Tests
       Score newScore = new Score(word);
       string result = newScore.Word;
       Assert.AreEqual(word, result);
+    }
+    [TestMethod]
+    public void ConvertToLowerCase_ReturnLowerCaseWord_String()
+    {
+      string word = "TEST";
+      Score newScore = new Score(word);
+      string result = newScore.Word;
+      Assert.AreEqual("test", newScore.ConvertToLowerCase("TEST"));
     }
   }
 }
