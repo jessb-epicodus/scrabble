@@ -10,7 +10,7 @@ namespace ScrabbleScore.Models
 
     public Score(string word)
     {
-      // Word = word;
+      Word = word;
     }
   }
 }
