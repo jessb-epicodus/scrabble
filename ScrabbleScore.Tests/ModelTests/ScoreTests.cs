@@ -3,14 +3,6 @@ using System.Collections.Generic;
 using System;
 using ScrabbleScore.Models;
 
-// Create new instance of word via constructor  X
-// return word as string  X
-// Convert the word to lowercase  X
-// Split the string into an array  X
-// Create counter variable  
-// If/Else statement adds value to counter depending on letter
-// Return counter value
-
 namespace ScrabbleScore.Tests
 {
   [TestClass]

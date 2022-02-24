@@ -17,10 +17,12 @@ score for that word
 
 ## Setup/Installation Requirements
 
-* Go to _GITLINK_
+* Go to _https://github.com/jessb-epicodus/scrabble.git_
 * Cone this repository to your desktop (or other desired location)
-* Navigate to the top level of the directory called _DIRECTORY_
-* Open the index.html file in your browser
+* Navigate to the top level of the directory called _ScrabbleScore.Soultion_
+* In your terminal run *dotnet restore* to add the required dependencies and tools for this project
+* To see the scrabble score of a word, in the terminal run *dotnet run* and follow the promts
+* To run tests in this project run *dotnet test ScrabbleScore.Tests*
 * _This is not yet published._
 
 ## Known Bugs
@@ -36,5 +38,3 @@ Copyright (c) _Feb 2022_ _Jessi Baker | Ryan Spencer_
 _If you run into any issues or have questions, ideas or concerns or wish to make a contribution to the code see contact information below._
 * Jessi Baker <jessb.epicodus@gmail.com>
 * Ryan Spencer <ryan.spencer1220@gmail.com>
-
-Co-authored-by: Ryan Spencer <ryan.spencer1220@gmail.com>
