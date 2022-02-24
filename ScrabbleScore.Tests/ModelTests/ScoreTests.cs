@@ -4,9 +4,9 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using ScrabbleScore.Models;
 
 // Create new instance of word via constructor  X
-// return word as string
-// Convert the word to lowercase
-// Split the string into an array
+// return word as string  X
+// Convert the word to lowercase  X
+// Split the string into an array  
 // Create counter variable
 // If/Else statement adds value to counter depending on letter
 // Return counter value
@@ -37,6 +37,14 @@ namespace ScrabbleScore.Tests
       Score newScore = new Score(word);
       string result = newScore.Word;
       Assert.AreEqual("test", newScore.ConvertToLowerCase("TEST"));
+    }
+    [TestMethod]
+    public void GetArray_ReturnLetters_String()
+    {
+      string word = "test";
+      Score newScore = new Score(word);
+      string result = newScore.Word;
+      Assert.AreEqual("t","e","s","t", newScore.GetArray("test"));
     }
   }
 }

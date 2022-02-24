@@ -17,5 +17,12 @@ namespace ScrabbleScore.Models
     {
       return word.ToLower();
     }
+
+    public string GetArray(string word)
+    {
+      return "false";
+    }
   }
 }
+
+// letters = {"t", "e", "s", "t"}
