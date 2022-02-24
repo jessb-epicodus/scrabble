@@ -38,10 +38,3 @@ _If you run into any issues or have questions, ideas or concerns or wish to make
 * Ryan Spencer <ryan.spencer1220@gmail.com>
 
 Co-authored-by: Ryan Spencer <ryan.spencer1220@gmail.com>
-
-// Create new instance of word via constructor
-// Convert the word to lowercase
-// Split the string into an array
-// Create counter variable
-// If/Else statement adds value to counter depending on letter
-// Return counter value

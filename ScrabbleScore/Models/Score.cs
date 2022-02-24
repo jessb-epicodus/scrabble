@@ -5,12 +5,12 @@ namespace ScrabbleScore.Models
 {
   public class Score
   {
-    // public string Word;
+    public string Word { get; }
     // public int Score;
 
-    // public Score(string Word)
-    // {
-    //   ScrabbleWord = scrabbleWord;
-    // }
+    public Score(string word)
+    {
+      // Word = word;
+    }
   }
 }
