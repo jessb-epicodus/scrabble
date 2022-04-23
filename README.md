@@ -1,4 +1,4 @@
-# _Scrabble Score_
+# _Scrabble_
 
 #### By _**Jessi Baker & Ryan Spencer**_ 
 
@@ -19,7 +19,7 @@ score for that word
 
 * Go to _https://github.com/jessb-epicodus/scrabble.git_
 * Cone this repository to your desktop (or other desired location)
-* Navigate to the top level of the directory called _ScrabbleScore.Soultion_
+* Navigate to the top level of the directory called _Scrabble.Soultion_
 * In your terminal run *dotnet restore* to add the required dependencies and tools for this project
 * To see the scrabble score of a word, in the terminal run *dotnet run* and follow the promts
 * To run tests in this project run *dotnet test ScrabbleScore.Tests*
